@@ -2,22 +2,6 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var animalDictionary = {
-  "🙈": "See-No-Evil Monkey",
-  "🙉": "Hear-No-Evil Monkey",
-  "🙊": "Speak-No-Evil Monkey",
-  "🐵": "Monkey Face",
-  "🐒": "Monkey",
-  "🦍": "Gorilla",
-  "🦧": "Orangutan",
-  "🐶": "Dog Face",
-  "🐕": "Dog",
-  "🦮": "Guide Dog",
-  "🐩": "Poodle",
-  "🐺": "Wolf",
-  "🦊": "Fox",
-  "🦝": "Raccoon",
-  "🐱": "Cat Face",
-  "🐈": "Cat",
   "🐧": "Penguin",
   "🕊️": "Dove",
   "🦅": "Eagle",
@@ -33,7 +17,23 @@ var animalDictionary = {
   "🦎": "Lizard",
   "🐍": "Snake",
   "🐲": "Dragon Face",
-  "🐉": "Dragon"
+  "🐉": "Dragon",
+  "🙈": "See-No-Evil Monkey",
+  "🙉": "Hear-No-Evil Monkey",
+  "🙊": "Speak-No-Evil Monkey",
+  "🐵": "Monkey Face",
+  "🐒": "Monkey",
+  "🦍": "Gorilla",
+  "🦧": "Orangutan",
+  "🐶": "Dog Face",
+  "🐕": "Dog",
+  "🦮": "Guide Dog",
+  "🐩": "Poodle",
+  "🐺": "Wolf",
+  "🦊": "Fox",
+  "🦝": "Raccoon",
+  "🐱": "Cat Face",
+  "🐈": "Cat"
 };
 
 var Animals = Object.keys(animalDictionary);
@@ -46,7 +46,8 @@ export default function App() {
 
   function onChangeHandler(event) {
     var input = event.target.value;
-    setUserInput(input);
+    var meaning = animalDictionary[input];
+    setUserInput(meaning);
   }
   function onClickHandler(item) {
     var animalsName = animalDictionary[item];
