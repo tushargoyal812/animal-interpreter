@@ -3,7 +3,6 @@ import "./styles.css";
 
 var animalDictionary = {
   "🐧": "Penguin",
-  "": "",
   "🕊️": "Dove",
   "🦅": "Eagle",
   "🦆": "Duck",
@@ -34,7 +33,8 @@ var animalDictionary = {
   "🦊": "Fox",
   "🦝": "Raccoon",
   "🐱": "Cat Face",
-  "🐈": "Cat"
+  "🐈": "Cat",
+  "": ""
 };
 
 var Animals = Object.keys(animalDictionary);
